@@ -9,7 +9,7 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compile the source code'
-                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                sh "/Users/fr50415/Documents/apache-maven-3.8.6/bin/mvn -Dmaven.test.failure.ignore=true clean package"
             }
             post {
                 always{
